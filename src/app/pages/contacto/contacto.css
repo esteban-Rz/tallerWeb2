@@ -1,0 +1,79 @@
+/* Estilo general inspirado en Marvel */
+body {
+  font-family: 'Bangers', cursive; /* Fuente estilo cómic */
+  background: linear-gradient(135deg, #1a1a1a, #3c3c3c);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor del formulario */
+#formulario {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  border: 3px solid #e62429; /* rojo Marvel */
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px #e62429;
+}
+
+/* Etiquetas estilo cómic */
+label {
+  font-weight: bold;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Inputs y textarea con estilo heroico */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: 2px solid #e62429;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  border-color: #ffd700; /* dorado estilo Iron Man */
+  box-shadow: 0 0 10px #ffd700;
+  outline: none;
+}
+
+/* Mensajes de error estilo alerta */
+.error {
+  color: #ffcc00;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Botón estilo Capitán América */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #e62429, #0047ab); /* rojo y azul */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffd700;
+}
+
+button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}

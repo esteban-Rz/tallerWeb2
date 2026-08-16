@@ -1,0 +1,38 @@
+<div class="galeria-container">
+  <h1>Catálogo de Superhéroes</h1>
+
+  @if (heroes().length > 0) {
+    <div class="galeria-grid">
+      @for (heroe of heroes(); track heroe.id) {
+        <div class="card">
+          <img [src]="heroe.images.md" [alt]="heroe.name" class="card-img">
+
+          <div class="card-body">
+            <h3>{{ heroe.name }}</h3>
+
+            <span class="badge" [class.badge-good]="heroe.biography.alignment === 'good'"
+                                 [class.badge-bad]="heroe.biography.alignment === 'bad'">
+              {{ heroe.biography.alignment }}
+            </span>
+
+            <p class="publisher">{{ heroe.biography.publisher }}</p>
+
+            <div class="info-row">
+              <p><strong>Raza:</strong> {{ heroe.appearance.race || 'Desconocida' }}</p>
+              <p><strong>Género:</strong> {{ heroe.appearance.gender }}</p>
+            </div>
+
+
+            <p class="occupation">
+              <strong>Ocupación:</strong> {{ heroe.work.occupation !== '-' ? heroe.work.occupation : 'Desconocida' }}
+            </p>
+          </div>
+        </div>
+      } @empty {
+        <p>No se encontraron héroes.</p>
+      }
+    </div>
+  } @else {
+    <p>Cargando héroes...</p>
+  }
+</div>

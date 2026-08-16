@@ -1,0 +1,13 @@
+.areaCards {
+  display: flex;          /* activa flexbox */
+  flex-direction: row;    /* organiza en fila */
+  gap: 1rem;              /* espacio entre cards */
+  justify-content: center;/* centra horizontalmente */
+  flex-wrap: wrap;        /* permite que bajen si no caben */
+}
+
+.card {
+  flex: 0 0 18rem;        /* mantiene ancho fijo */
+}
+
+
