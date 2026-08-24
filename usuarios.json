@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "email": "estebanalmanque@gmail.com",
+      "password": "$2a$10$hetbEZMxmbmG/WV1M85S8OXWmGWK.wTUtspyiOBqwaYvVep6mv6C.",
+      "id": 1
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
