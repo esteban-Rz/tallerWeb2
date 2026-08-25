@@ -16,6 +16,7 @@ export const routes: Routes = [
     {path:"contacto",component: Contacto},
     {path:"nosotros",component: Nosotros},
     {path:"carritoCompra",component: CarritoCompra ,canActivate: [loginGuard]},
+    {path:"producto/carritoCompra",component: CarritoCompra ,canActivate: [loginGuard]},
     {path:"login",component: Login},
     {path:"producto",component: Productos, canActivate: [loginGuard]},
     {path:"inventario",component: Inventario,canMatch: [productGuardGuard]},
