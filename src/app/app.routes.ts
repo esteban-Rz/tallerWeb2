@@ -9,6 +9,8 @@ import { Productos } from './components/productos/productos';
 import { Inventario } from './components/inventario/inventario';
 import { CarritoCompra } from './components/carrito-compra/carrito-compra';
 import { productGuardGuard } from './guards/product.guard-guard';
+import { UsuariosComponent } from './components/usuarios-component/usuarios-component';
+import { Tabla } from './components/tabla/tabla';
 
 export const routes: Routes = [
     {path:"home",component:Home},
@@ -16,6 +18,9 @@ export const routes: Routes = [
     {path:"contacto",component: Contacto},
     {path:"nosotros",component: Nosotros},
     {path:"carritoCompra",component: CarritoCompra ,canActivate: [loginGuard]},
+    {path:"usuario",component: UsuariosComponent ,canActivate: [loginGuard]},
+    {path:"tabla",component: Tabla ,canActivate: [loginGuard]},
+
     {path:"producto/carritoCompra",component: CarritoCompra ,canActivate: [loginGuard]},
     {path:"login",component: Login},
     {path:"producto",component: Productos, canActivate: [loginGuard]},
